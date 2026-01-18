@@ -31,11 +31,11 @@
 ## 작업 프로세스
 
 ### 1. PRD 기반 개발
-- 새로운 기능을 시작하기 전에 반드시 PRD 문서(`docs/PRD-[기능명].md`) 작성
+- 새로운 기능을 시작하기 전에 반드시 PRD 문서(`docs/prd/PRD-[기능명].md`) 작성
 - PRD에는 목표, 사용자 스토리, 기능 요구사항, 성공 지표 포함
 
 ### 2. TASKS 분해
-- PRD를 기반으로 상세한 작업 목록(`docs/TASKS-[기능명].md`) 생성
+- PRD를 기반으로 상세한 작업 목록(`docs/tasks/TASKS-[기능명].md`) 생성
 - TASKS는 Epic(상위 목표)과 개별 Task로 구성
 - 각 Task는 체크박스로 진행 상황 추적
 - Task ID 형식: EPIC-01-01 (Epic 번호 - Task 번호)
@@ -102,8 +102,10 @@ project-root/
 ├── app/                               # Next.js 앱 디렉토리
 ├── components/                        # 재사용 가능한 컴포넌트
 ├── docs/
-│   ├── PRD-[기능명].md                 # 기능별 PRD 문서
-│   └── TASKS-[기능명].md               # 기능별 작업 목록
+│   ├── prd/                           # PRD 문서 디렉토리
+│   │   └── PRD-[기능명].md             # 기능별 PRD 문서
+│   └── tasks/                         # 작업 목록 디렉토리
+│       └── TASKS-[기능명].md           # 기능별 작업 목록
 ├── labs/                              # 실습 자료
 │   ├── lab01/                         
 │   └── lab02/                         

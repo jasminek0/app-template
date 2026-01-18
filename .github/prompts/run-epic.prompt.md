@@ -11,7 +11,7 @@ description: TASKS 문서의 전체 Epic을 배치로 실행하는 프롬프트�
 ```
 /run-epic EPIC-01
 
-TASKS 파일: docs/TASKS-[기능명].md
+TASKS 파일: docs/tasks/TASKS-[기능명].md
 ```
 
 ## 지침
@@ -23,12 +23,12 @@ TASKS 파일: docs/TASKS-[기능명].md
 1. **Epic ID 수신**: 사용자가 실행할 Epic ID를 제공합니다 (예: EPIC-01).
 
 2. **TASKS 파일 확인**: 
-   - `docs/TASKS-[기능명].md` 파일에서 해당 Epic을 찾습니다
+   - `docs/tasks/TASKS-[기능명].md` 파일에서 해당 Epic을 찾습니다
    - Epic에 속한 모든 Task 목록을 확인합니다
    - Epic의 목표와 컨텍스트를 이해합니다
 
 3. **PRD 참조**: 
-   - `docs/PRD-[기능명].md`를 참조하여 Epic과 관련된 기능 요구사항을 확인합니다
+   - `docs/prd/PRD-[기능명].md`를 참조하여 Epic과 관련된 기능 요구사항을 확인합니다
    - Epic이 어떤 사용자 스토리를 충족시키는지 이해합니다
 
 4. **실행 계획 수립**: 
@@ -57,7 +57,7 @@ TASKS 파일: docs/TASKS-[기능명].md
       - [ ] 통합 확인
    
    d. **Task 체크 표시**
-      - `docs/TASKS-[기능명].md`에서 해당 Task를 `- [x]`로 변경
+      - `docs/tasks/TASKS-[기능명].md`에서 해당 Task를 `- [x]`로 변경
    
    e. **Task 완료 알림**
       ```
@@ -72,7 +72,9 @@ TASKS 파일: docs/TASKS-[기능명].md
    - Epic의 목표가 달성되었는지 검증합니다
 
 7. **Epic 체크 표시**: 
-   - `docs/TASKS-[기능명].md` 파일에서 Epic의 체크박스를 `- [x]`로 변경합니다
+   - `docs/tasks/TASKS-[기능명].md` 파일에서 Epic 헤더의 체크박스를 `- [x]`로 변경합니다
+   - 예: `- [ ] ### EPIC-01: ...` → `- [x] ### EPIC-01: ...`
+   - **중요**: Epic 내의 모든 Task가 완료되어야 Epic을 체크할 수 있습니다
 
 8. **결과 보고**: 
    - Epic 전체 요약을 제공합니다
