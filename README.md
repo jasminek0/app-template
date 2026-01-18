@@ -1,3 +1,34 @@
+# AI Coding Workflow Template
+
+> ⚠️ **템플릿 저장소 안내**: 이 저장소는 템플릿 저장소입니다. 직접 푸시가 차단되어 있습니다. 
+> 자세한 내용은 [.github/TEMPLATE_PROTECTION.md](.github/TEMPLATE_PROTECTION.md)를 참조하세요.
+
+이 프로젝트는 구조화된 AI 코딩 워크플로우를 사용하여 개발되는 Next.js 템플릿입니다.
+
+## 템플릿 사용 방법
+
+```bash
+# 1. 이 템플릿을 기반으로 새 프로젝트 생성
+git clone https://github.com/jasminek0/app-template.git my-new-project
+cd my-new-project
+
+# 2. 원격 저장소 변경
+git remote remove origin
+git remote add origin <새-프로젝트-저장소-URL>
+
+# 3. 새 프로젝트로 푸시
+git push -u origin main
+```
+
+## 프로젝트 특징
+
+- **구조화된 워크플로우**: PRD → TASKS → 구현의 체계적인 개발 프로세스
+- **GitHub Copilot 최적화**: 사용자 정의 지침 및 프롬프트 포함
+- **Next.js 14**: App Router, TypeScript, Tailwind CSS
+- **테스트 환경**: Vitest (유닛), Playwright (E2E)
+
+## 시작하기
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
